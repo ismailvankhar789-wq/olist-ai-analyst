@@ -1,0 +1,76 @@
+
+GOLD.dim_customers
+  - customer_key (bigint)
+  - customer_id (nvarchar)
+  - customer_unique_id (nvarchar)
+  - geolocation_key (bigint)
+  - customer_city (nvarchar)
+  - customer_state (char)
+
+GOLD.dim_geolocation
+  - geolocation_key (bigint)
+  - geolocation_zip_code_prefix (int)
+  - geolocation_city (nvarchar)
+  - geolocation_state (char)
+  - geolocation_lat (decimal)
+  - geolocation_lng (decimal)
+
+GOLD.dim_products
+  - product_key (bigint)
+  - product_id (nvarchar)
+  - product_category_name (nvarchar)
+  - product_photos_qty (tinyint)
+  - product_weight_g (int)
+  - product_volume_cm (int)
+  - product_size_range (varchar)
+
+GOLD.dim_sellers
+  - seller_key (bigint)
+  - geolocation_key (bigint)
+  - seller_id (nvarchar)
+  - seller_city (nvarchar)
+  - seller_state (char)
+
+GOLD.fact_order_items
+  - order_id (nvarchar)
+  - order_item_id (int)
+  - product_key (bigint)
+  - seller_key (bigint)
+  - customer_key (bigint)
+  - shipping_limit_date (nvarchar)
+  - price (decimal)
+  - freight_value (decimal)
+  - total_item_value (decimal)
+  - price_segment (varchar)
+
+GOLD.fact_order_payments
+  - order_id (nvarchar)
+  - customer_key (bigint)
+  - payment_sequential (tinyint)
+  - payment_type (nvarchar)
+  - payment_installments (tinyint)
+  - payment_value (decimal)
+
+GOLD.fact_order_reviews
+  - review_id (nvarchar)
+  - order_id (nvarchar)
+  - customer_key (bigint)
+  - review_score (tinyint)
+  - customer_sentiment (varchar)
+  - review_creation_date (datetime2)
+  - review_answer_timestamp (datetime2)
+  - response_hours (int)
+
+GOLD.fact_orders_header
+  - order_id (nvarchar)
+  - customer_id (nvarchar)
+  - customer_key (bigint)
+  - order_status (nvarchar)
+  - order_purchase_timestamp (datetime2)
+  - order_approved_at (datetime2)
+  - order_delivered_carrier_date (datetime2)
+  - order_delivered_customer_date (datetime2)
+  - order_estimated_delivery_date (datetime2)
+  - approval_hours (int)
+  - delivery_days (int)
+  - delivery_status (varchar)

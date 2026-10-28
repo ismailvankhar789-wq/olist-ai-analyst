@@ -2,7 +2,9 @@
 
 **Turn business questions into SQL queries, interactive charts, and AI-generated insights.**
 
-[🚀 Live Demo](https://olist-ai-analyst-8pypnuhfxzaxqry53rplrr.streamlit.app/) · ![Olist AI Analyst Screenshot](screenshot.png)
+[🚀 Live Demo](https://olist-ai-analyst-8pypnuhfxzaxqry53rplrr.streamlit.app/) · 
+![Olist AI Analyst Screenshot]
+![Uploading image.png…]()
 
 ## Overview
 

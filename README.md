@@ -4,7 +4,7 @@
 
 [🚀 Live Demo](https://olist-ai-analyst-8pypnuhfxzaxqry53rplrr.streamlit.app/) · 
 
-![Uploading image.png…]()
+![Olist AI Analyst Screenshot](screenshot.png)
 
 ## Overview
 

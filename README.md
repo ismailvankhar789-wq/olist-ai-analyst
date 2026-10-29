@@ -3,7 +3,9 @@
 **Turn business questions into SQL queries, interactive charts, and AI-generated insights.**
 
 [🚀 Live Demo](https://olist-ai-analyst-8pypnuhfxzaxqry53rplrr.streamlit.app/) · 
-![Olist AI Analyst Screenshot](screenshot.png)
+
+![Uploading image.png…]()
+
 ## Overview
 
 Olist AI Analyst is an AI-powered analytics application that translates natural-language business questions into SQL queries using Google Gemini. It executes read-only analytical queries against an exported DuckDB database and presents the results through an interactive Streamlit interface.

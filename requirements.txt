@@ -1,6 +1,5 @@
 streamlit
 pandas
+duckdb
 python-dotenv
 google-genai
-pyodbc
-sqlalchemy
